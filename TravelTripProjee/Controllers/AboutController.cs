@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TravelTripProjee.Models.Siniflar;
 
 namespace TravelTripProjee.Controllers
 {
     public class AboutController : Controller
     {
-        // GET: About
+        Context _context = new Context();
         public ActionResult Index()
         {
-            return View();
+            var değerler = _context.Hakkimizdas.ToList();
+            return View(değerler);
         }
     }
 }

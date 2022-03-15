@@ -13,8 +13,8 @@ namespace TravelTripProjee.Models.Siniflar
         public string KullaniciAdi { get; set; }
         public string Mail { get; set; }
         public string Yorum { get; set; }
+        public int  BlogID { get; set; }
 
-
-        public Blog Blog { get; set; }
+        public virtual Blog Blog { get; set; }
     }
 }
