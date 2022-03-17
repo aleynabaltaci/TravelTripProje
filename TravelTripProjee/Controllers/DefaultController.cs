@@ -28,12 +28,17 @@ namespace TravelTripProjee.Controllers
         }
         public  PartialViewResult Partial3()
         {
-            var deger = _context.Blogs.ToList();
+            var deger = _context.Blogs.Take(10).ToList();
             return PartialView(deger);
         } 
         public  PartialViewResult Partial4()
         {
-            var deger = _context.Blogs.ToList();
+            var deger = _context.Blogs.Take(3).ToList();
+            return PartialView(deger);
+        }
+        public  PartialViewResult Partial5()
+        {
+            var deger = _context.Blogs.Take(3).OrderByDescending(x=>x.ID).ToList();
             return PartialView(deger);
         }
 
