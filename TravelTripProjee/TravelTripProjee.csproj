@@ -133,6 +133,7 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\GirisYapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\İletisimController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -265,6 +266,7 @@
     <Content Include="weblogin\fonts\Asap-Regular.ttf" />
     <Content Include="weblogin\fonts\Audiowide-Regular.ttf" />
     <Content Include="Views\GirisYap\Login.cshtml" />
+    <Content Include="Views\İletisim\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
