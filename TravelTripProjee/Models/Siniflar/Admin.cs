@@ -10,6 +10,7 @@ namespace TravelTripProjee.Models.Siniflar
     {
         [Key]
         public int ID { get; set; }
+       
         public string Kullanici { get; set; }
         public string Sifre { get; set; }
     }
